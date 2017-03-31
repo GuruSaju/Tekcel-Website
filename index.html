@@ -5,10 +5,10 @@
         crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
             crossorigin="anonymous">
-    <script src="angular.js"></script>
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="page1.css">
-  
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/app.js"></script>
+    <link rel="stylesheet" href="css/page1.css">
+  <link rel="stylesheet" href="css/slideshow.css">
 </head>
 
 <body>
@@ -22,10 +22,41 @@
   <a ng-class="{active: cc.aboutvar }" href="#about" ng-model="cc.aboutvar" ng-click="cc.homeclick('about')">About</a>
 </div>
 
-<div class="myscroll" id="scroll">
-<marquee behavior="scroll" direction="right">iiiiiiiii...</marquee>
+
+ <div class="slideshow-container" ng-show="cc.homevar">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/img1.jpg" style="width: 100%;height: 350px">
+  <div class="text"><a href="https://en.wikipedia.org/wiki/London">Caption Text</a></div>
 </div>
- 
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/img2.jpg" style="width: 100%;height: 350px">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/img3.jpg" style="width: 100%;height: 350px" >
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="images/img4.jpg" style="width: 100%;height: 350px" >
+  <div class="text">Caption Three</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" ng-click="cc.showclick(1)"></span> 
+  <span class="dot" ng-click="cc.showclick(2)"></span> 
+  <span class="dot" ng-click="cc.showclick(3)"></span> 
+  <span class="dot" ng-click="cc.showclick(4)"></span>
+</div>
+</div>
+
+
  <div ng-show="cc.homevar">
    <article>
   <h1>Home</h1>

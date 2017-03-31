@@ -21,7 +21,6 @@ header {
     background-color: black;
     clear: left;
     text-align: center;
-    font-size: 20;
 }
 
 footer {
@@ -60,3 +59,4 @@ article {
     padding: 2px;
     margin: 2px;
 }
+
