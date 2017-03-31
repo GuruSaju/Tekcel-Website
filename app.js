@@ -1,13 +1,32 @@
 var app =angular.module("WebModule",[]);
-app.controller("CurrentTime",FTime);
+app.controller("contentcontrol",Content);
 
-function FTime(){
-    var date = new Date();
-    this.currentTime=date.toTimeString();
+function Content(){
+    this.homevar=true;
 
-    this.updateTime = function(){
-        console.log("button clicked");
-        var date = new Date();
-        this.currentTime=date.toTimeString();
+    this.homeclick = function(menu){
+            this.homevar=false;
+            this.newsvar=false;
+             this.contactvar=false;
+             this.aboutvar=false;
+        if(menu === "home"){
+            this.homevar=true;
+            this.newsvar=false;
+        }
+        else if(menu === "news"){
+             this.newsvar=true;
+        }
+        else if(menu === "contact"){
+            this.contactvar=true;
+        }
+        else if(menu === "about"){
+            this.aboutvar=true;
+        }
+       
     }
+this.isActive = function (viewLocation) {
+     var active = (viewLocation === this.location.path());
+     return active;
+};
+
 }
