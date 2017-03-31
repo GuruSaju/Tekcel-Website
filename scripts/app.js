@@ -28,11 +28,13 @@ this.isActive = function (viewLocation) {
      var active = (viewLocation === this.location.path());
      return active;
 };
-
+var initial;
 var slideIndex = 0;
 showSlides();
 this.showclick=function(n) {
     slideIndex=n-1;
+    window.clearTimeout(initial);
+    showSlides();
 }
 function showSlides() {
     var i;
@@ -48,7 +50,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
+    initial=window.setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
 
