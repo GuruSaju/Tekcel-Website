@@ -1,92 +1,465 @@
 <html ng-app="WebModule">
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-            crossorigin="anonymous">
-    <script src="scripts/angular.js"></script>
-    <script src="scripts/app.js"></script>
-    <link rel="stylesheet" href="css/page1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/home.controller.js"></script>
+  <script src="scripts/about.controller.js"></script>
+  <script src="scripts/contactus.controller.js"></script>
+  <script src="scripts/services.controller.js"></script>
+  <script src="scripts/careers.controller.js"></script>
+  <link rel="stylesheet" href="css/page.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/aboutus.css">
+  <link rel="stylesheet" href="css/contactus.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/careers.css">
   <link rel="stylesheet" href="css/slideshow.css">
 </head>
 
 <body>
-   
-    <header> Sample Website</header>
+
+  <header> Sample Website</header>
+
+
+  <div class="entirepage">
+
+
     <div class="container" ng-controller="contentcontrol as cc">
-<div class="topnav" id="myTopnav">
-  <a ng-class="{active: cc.homevar }" href="#home" ng-model="cc.homevar" ng-click="cc.homeclick('home')">Home</a>
-  <a ng-class="{active: cc.newsvar }" href="#news" ng-model="cc.newsvar" ng-click="cc.homeclick('news')">News</a>
-  <a ng-class="{active: cc.contactvar }" href="#contact" ng-model="cc.contactvar" ng-click="cc.homeclick('contact')">Contact</a>
-  <a ng-class="{active: cc.aboutvar }" href="#about" ng-model="cc.aboutvar" ng-click="cc.homeclick('about')">About</a>
-</div>
+
+      <div class="topnav" id="myTopnav">
+        <a ng-class="{active: cc.homevar }" href="#home" ng-model="cc.homevar" ng-click="cc.homeclick('home')">Home</a>
+        <a ng-class="{active: cc.aboutvar }" href="#about" ng-model="cc.aboutvar" ng-click="cc.homeclick('about')">About</a>
+        <a ng-class="{active: cc.servicevar }" href="#service" ng-model="cc.servicevar" ng-click="cc.homeclick('service')">Services</a>
+        <a ng-class="{active: cc.careervar }" href="#career" ng-model="cc.careervar" ng-click="cc.homeclick('career')">Careers</a>
+        <a ng-class="{active: cc.contactvar }" href="#contact" ng-model="cc.contactvar" ng-click="cc.homeclick('contact')">Contact Us</a>
+      </div>
+
+      <div ng-show="cc.homevar">
+        <!--
+       -->
+        <div ng-controller="homecontrol as hc">
+
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="images/img1.jpg" style="width: 100%;height: 350px">
+
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/img2.jpg" style="width: 100%;height: 350px">
+
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/img3.jpg" style="width: 100%;height: 350px">
+
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="images/img4.jpg" style="width: 100%;height: 350px">
+
+            </div>
+
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" ng-click="cc.showclick(1)"></span>
+              <span class="dot" ng-click="cc.showclick(2)"></span>
+              <span class="dot" ng-click="cc.showclick(3)"></span>
+              <span class="dot" ng-click="cc.showclick(4)"></span>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-8">
+              <article>
+                <h1>Know About Us</h1>
+                <p>{{hc.contentis.knowaboutusp1}}</p>
+                <p>{{hc.contentis.knowaboutusp2}}</p>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+              <br>
+              <img src="images/aboutus_image.png" style="width : 365px;height:280px">
+            </div>
+
+          </div>
+
+          <br>
+          <div class="whatwedo">
+
+            <div>
+              <br>
+              <h1 style="text-align: center;">What We Do</h1>
+              <p style="text-align: center;">{{hc.contentis.whatwedoline1}}
+                <br>{{hc.contentis.whatwedoline2}}</p>
+            </div>
+
+            <br>
+
+            <div class="row">
+
+              <div class="col-md-4" id="wwdbox1">
+                <br>
+                <p style="text-align: center;"><img src="images/icon_technology_consulting.png" style="width : 60px;height:60px"></p>
+                <h4 style="text-align: center;">Technology Consulting</h4>
+                <p style="text-align: center;"> {{hc.contentis.box1}}
+                  <p>
+              </div>
+
+              <div class="col-md-4" id="wwdbox2">
+                <br>
+                <p style="text-align: center;"><img src="images/icon_technology_training.png" style="width : 60px;height:60px"></p>
+                <h4 style="text-align: center;">Technology Training</h4>
+                <p style="text-align: center;"> {{hc.contentis.box2}}
+                  <p>
+              </div>
+
+              <div class="col-md-4" id="wwdbox3">
+                <br>
+                <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
+                <h4 style="text-align: center;">Technology Solutions</h4>
+                <p style="text-align: center;">{{hc.contentis.box3}}
+                  <p>
+              </div>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
 
 
- <div class="slideshow-container" ng-show="cc.homevar">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
-  <img src="images/img1.jpg" style="width: 100%;height: 350px">
-  <div class="text"><a href="https://en.wikipedia.org/wiki/London">Caption Text</a></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 4</div>
-  <img src="images/img2.jpg" style="width: 100%;height: 350px">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <img src="images/img3.jpg" style="width: 100%;height: 350px" >
-  <div class="text">Caption Three</div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext">4 / 4</div>
-  <img src="images/img4.jpg" style="width: 100%;height: 350px" >
-  <div class="text">Caption Three</div>
-</div>
-<br>
-<div style="text-align:center">
-  <span class="dot" ng-click="cc.showclick(1)"></span> 
-  <span class="dot" ng-click="cc.showclick(2)"></span> 
-  <span class="dot" ng-click="cc.showclick(3)"></span> 
-  <span class="dot" ng-click="cc.showclick(4)"></span>
-</div>
-</div>
 
 
- <div ng-show="cc.homevar">
-   <article>
-  <h1>Home</h1>
-  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-</article>
- </div>
 
-<div ng-show="cc.newsvar">
-   <article>
-  <h1>News</h1>
-  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-</article>
-</div>
-<div ng-show="cc.contactvar">
-   <article>
-  <h1>Contact</h1>
-  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-</article>
-</div>
-<div ng-show="cc.aboutvar">
-   <article>
-  <h1>About</h1>
-  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-</article>
-</div>
+
+
+
+
+        </div>
+
+      </div>
+      <!-- </div> -->
+
+
+      <div ng-show="cc.aboutvar">
+        <div ng-controller="aboutcontrol as ac">
+          <div id="about">
+            <br>
+            <h1 style="color: #ff4d4d">&nbsp; About Us</h1>
+            <h5 style="color: #ff4d4d">&nbsp; &nbsp;&nbsp;&nbsp; A Staffing and consulting agency that believes in the power of people.</h5>
+          </div>
+
+          <h3>TeKcel Success </h3>
+          <h3>Built on Effective and Enduring Relationships</h3>
+          <article>
+            <p>{{ac.contentis.relp1}}</p>
+            <p>{{ac.contentis.relp2}}</p>
+          </article>
+
+          <h3>What Makes Us Different?</h3>
+
+          <article>
+            <p>{{ac.contentis.diffline1}}</p>
+            <p>{{ac.contentis.diffline2}}</p>
+            <p>{{ac.contentis.diffline3}}</p>
+            <p>{{ac.contentis.diffline4}}</p>
+            <p>{{ac.contentis.diffline5}}</p>
+            <p>{{ac.contentis.diffline6}}</p>
+            <p>{{ac.contentis.diffline7}}</p>
+          </article>
+
+        </div>
+        <br>
+        <br>
+        <br>
+      </div>
+
+
+
+
+
+      <div ng-show="cc.servicevar" ng-controller="servicescontrol as sc">
+        <div class="services">
+          <br>
+          <h1 style="color: #ff4d4d"> &nbsp; Services</h1>
+          <h5 style="color: #ff4d4d"> &nbsp; &nbsp;&nbsp;&nbsp; We offer an array of valuable products and services</h5>
+        </div>
+        <article>
+          <h2>Name is incredible</h2>
+          <h4>We tailor service to meet the direct needs of each client</h4>
+          <p>{{sc.contentis.serp1}}</p>
+        </article>
+
+
+
+
+        <div class="whatwedo">
+
+          <div>
+            <br>
+            <h1 style="text-align: center;">Technologies</h1>
+
+          </div>
+
+          <br>
+
+          <div class="row">
+
+            <div class="col-md-3" id="tecbox1">
+              <br>
+              <p style="text-align: center;"><img src="images/icon_technology_consulting.png" style="width : 60px;height:60px"></p>
+              <h4 style="text-align: center;">Technology Consulting</h4>
+              <p style="text-align: center;">
+                <p>
+            </div>
+
+            <div class="col-md-3" id="tecbox2">
+              <br>
+              <p style="text-align: center;"><img src="images/icon_technology_training.png" style="width : 60px;height:60px"></p>
+              <h4 style="text-align: center;">Technology Training</h4>
+              <p style="text-align: center;">
+                <p>
+            </div>
+
+            <div class="col-md-3" id="tecbox3">
+              <br>
+              <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
+              <h4 style="text-align: center;">Technology Solutions</h4>
+              <p style="text-align: center;">
+                <p>
+            </div>
+
+
+            <div class="col-md-3" id="tecbox4">
+              <br>
+              <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
+              <h4 style="text-align: center;">Technology Solutions</h4>
+              <p style="text-align: center;">
+                <p>
+            </div>
+
+          </div>
+          <div class="row">
+
+            <div class="col-md-3" id="tecbox5">
+              <br>
+              <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
+              <h4 style="text-align: center;">Technology Solutions</h4>
+              <p style="text-align: center;">
+                <p>
+            </div>
+
+
+            <div class="col-md-3" id="tecbox6">
+              <br>
+              <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
+              <h4 style="text-align: center;">Technology Solutions</h4>
+              <p style="text-align: center;">
+                <p>
+            </div>
+
+
+            <div class="col-md-3" id="tecbox7">
+              <br>
+              <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
+              <h4 style="text-align: center;">Technology Solutions</h4>
+              <p style="text-align: center;">
+                <p>
+            </div>
+
+
+            <div class="col-md-3" id="tecbox8">
+              <br>
+              <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
+              <h4 style="text-align: center;">Technology Solutions</h4>
+              <p style="text-align: center;">
+                <p>
+            </div>
+
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+
+
+      </div>
+
+
+
+
+
+      <div ng-show="cc.careervar" ng-controller="careerscontrol as cac">
+        <div class="careers">
+          <br>
+          <h1 style="color: #ff4d4d"> &nbsp; Careers</h1>
+          <h5 style="color: #ff4d4d"> &nbsp; &nbsp;&nbsp;&nbsp; Employees are the source for our service excellence</h5>
+        </div>
+        <h3>TeKcel Success </h3>
+        <h3>Built on Effective and Enduring Relationships</h3>
+        <article>
+          <p>{{cac.contentis.carp1}}</p>
+          <p>{{cac.contentis.carp2}}</p>
+          <p>{{cac.contentis.carp3}}</p>
+        </article>
+
+        <h3>Our Benifits Include</h3>
+
+        <article>
+          <p>{{cac.contentis.benline1}}</p>
+          <p>{{cac.contentis.benline2}}</p>
+          <p>{{cac.contentis.benline3}}</p>
+          <p>{{cac.contentis.benline4}}</p>
+          <p>{{cac.contentis.benline5}}</p>
+          <p>{{cac.contentis.benline6}}</p>
+          <p>{{cac.contentis.benline7}}</p>
+        </article>
+        <br>
+        <br>
+        <br>
+      </div>
+
+
+      <div ng-show="cc.contactvar">
+        <div ng-controller="aboutcontrol as ac">
+          <div class="contactus">
+            <br>
+            <h1 style="color: #ff4d4d"> &nbsp; Contact Us</h1>
+            <h5 style="color: #ff4d4d"> &nbsp; &nbsp;&nbsp;&nbsp; Give us a Call</h5>
+          </div>
+
+
+
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <br>
+              <h3 style="text-align: center"> Our Office </h3>
+
+
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-1">
+                  <span class="glyphicon glyphicon-time" style="font-size: 45px"></span>
+                </div>
+
+                <div class="col-md-8">
+                  <p> &nbsp;&nbsp;Opening Hours</p>
+                  <p> &nbsp;&nbsp;9:00 AM - 6:00 PM</p>
+                </div>
+              </div>
+
+
+
+              <br>
+              <div class="row">
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-1">
+                  <span class="glyphicon glyphicon-envelope" style="font-size: 45px"></span>
+                </div>
+
+                <div class="col-md-8">
+                  <p> &nbsp;&nbsp;Email</p>
+                  <p> &nbsp;&nbsp;@gmail.com</p>
+                </div>
+              </div>
+
+
+
+              <br>
+              <div class="row">
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-1">
+                  <span class="glyphicon glyphicon-earphone" style="font-size: 45px"></span>
+                </div>
+
+                <div class="col-md-8">
+                  <p> &nbsp;&nbsp;Phone</p>
+                  <p> &nbsp;&nbsp;000-000-0000</p>
+                </div>
+              </div>
+
+
+
+              <br>
+              <div class="row">
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-1">
+                  <span class="glyphicon glyphicon-globe" style="font-size: 45px"></span>
+                </div>
+
+                <div class="col-md-8">
+                  <p> &nbsp;&nbsp;Location</p>
+                  <p> &nbsp;&nbsp;Dubai Kuruku Sandhu, Dubai Main Road, Dubai</p>
+                </div>
+              </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="col-md-6">
+              <br>
+
+              <h3 style="text-align: center">Contact Form here</h3>
+            </div>
+
+
+
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+
+      </div>
+
+
+
+
+
     </div>
-   <footer>Copyright</footer>
+    <!-- entire page div -->
+    <footer>Copyright</footer>
 </body>
+
 </html>

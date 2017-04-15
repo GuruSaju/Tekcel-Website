@@ -1,4 +1,18 @@
-
+/*.entirepage{
+    background: linear-gradient(#595959, white);
+    height:300px;
+    width: 100%;
+   
+    margin:0;
+}
+*/
+.entirepage{
+    background: linear-gradient(#737373, white);
+    height:300px;
+    width: 100%;
+   
+    margin:0;
+}
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -29,15 +43,10 @@ footer {
     background-color: black;
     clear: left;
     text-align: center;
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-article {
-    padding: 0em;
-    overflow: hidden;
 }
 
 

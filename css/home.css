@@ -1,0 +1,56 @@
+article {
+    padding: 0em;
+    overflow: hidden;
+}
+
+#wwdbox1 {
+    width: 340px;
+    height:240px;
+    padding: 10px;
+    border: 2px solid indianred;
+    margin: 25; 
+}
+
+#wwdbox1:hover{
+    width: 340px;
+    height:240px;
+    padding: 10px;
+    border: 4px solid indianred;
+    margin: 25;
+}
+
+#wwdbox2 {
+    width: 340px;
+    height:240px;
+    padding: 10px;
+    border: 2px solid indianred;
+    margin: 25; 
+}
+
+#wwdbox2:hover{
+    width: 340px;
+    height:240px;
+    padding: 10px;
+    border: 4px solid indianred;
+    margin: 25;
+}
+#wwdbox3 {
+    width: 340px;
+    height:240px;
+    padding: 10px;
+    border: 2px solid indianred;
+    margin: 25; 
+}
+
+#wwdbox3:hover{
+    width: 340px;
+    height:240px;
+    padding: 10px;
+    border: 4px solid indianred;
+    margin: 25;
+}
+.whatwedo{
+    background: linear-gradient(lightgrey, white);
+    height: 350px;
+    width: 100%;
+}

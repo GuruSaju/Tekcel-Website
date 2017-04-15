@@ -1,0 +1,19 @@
+
+#about{
+    background-image: url("../images/Contactus.jpg");
+    background-size:cover;
+    background-repeat: repeat-x;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    margin:0;
+}
+/*
+#about{
+    background: linear-gradient(#595959, white);
+    height: 100px;
+    width: 100%;
+    position: relative;
+    margin:0;
+}
+*/

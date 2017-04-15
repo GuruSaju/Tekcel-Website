@@ -3,18 +3,35 @@ app.controller("contentcontrol",Content);
 
 function Content(){
     this.homevar=true;
-
+ /*   if(this.servicevar === true){
+             this.servicevar=true;
+            this.homevar=false;
+        }
+        else if(this.contactvar === true){
+             this.contactvar=true;
+              this.homevar=false;
+        }
+        else if(this.aboutvar === true){
+            this.aboutvar=true;
+             this.homevar=false;
+        }
+        else if(this.careervar === true){
+            this.careervar=true;
+             this.homevar=false;
+        }
+        */
+console.log("hi");
     this.homeclick = function(menu){
             this.homevar=false;
-            this.newsvar=false;
+            this.servicevar=false;
              this.contactvar=false;
              this.aboutvar=false;
+             this.careervar=false;
         if(menu === "home"){
             this.homevar=true;
-            this.newsvar=false;
         }
-        else if(menu === "news"){
-             this.newsvar=true;
+        else if(menu === "service"){
+             this.servicevar=true;
         }
         else if(menu === "contact"){
             this.contactvar=true;
@@ -22,7 +39,9 @@ function Content(){
         else if(menu === "about"){
             this.aboutvar=true;
         }
-       
+        else if(menu === "career"){
+            this.careervar=true;
+        }
     };
 this.isActive = function (viewLocation) {
      var active = (viewLocation === this.location.path());
