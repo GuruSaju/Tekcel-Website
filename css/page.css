@@ -21,12 +21,14 @@
 
 .topnav a {
     float: left;
-    display: block;
+    display: table;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    width:228px;
+    
 }
 
 header {
@@ -39,11 +41,11 @@ header {
 
 footer {
     padding: 1em;
-    color: white;
-    background-color: black;
+    color:black;
+    
     clear: left;
-    text-align: center;
-  position: fixed;
+    text-align: right;
+  position: bottom;
   right: 0;
   bottom: 0;
   left: 0;
@@ -53,6 +55,8 @@ footer {
 .topnav a:hover {
     background-color: indianred;
     color: black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 
 
