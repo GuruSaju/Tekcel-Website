@@ -20,7 +20,7 @@ function Content(){
              this.homevar=false;
         }
         */
-console.log("hi");
+
     this.homeclick = function(menu){
             this.homevar=false;
             this.servicevar=false;
@@ -72,5 +72,14 @@ function showSlides() {
     initial=window.setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
+
+this.responsive=function() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 
 }
