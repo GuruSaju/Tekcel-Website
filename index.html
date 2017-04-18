@@ -485,19 +485,21 @@
 
                 <h3 style="text-align: center">Contact Form here</h3>
                 <h5 style="text-align: center">Feel free to contact us with any questions regarding our products, services, training, or employment opportunities.</h5>
-                <form action="/action_page.php">
+                <form action="webmailer.php" method="post">
 
                   <label for="fname">Name</label>
                   <input type="text" id="name" name="name" placeholder="Your name">
+                  
 
                   <label for="lname">Email</label>
-                  <input type="text" id="email" name="emailid" placeholder="Enter your email">
-
+                  <input type="text" id="email" name="email" placeholder="Enter your email">
+                  
 
                   <label for="subject">Message</label>
                   <textarea id="message" name="message" placeholder="Enter your Message" style="height:200px"></textarea>
+                  
 
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Send">
 
                 </form>
               </div>
