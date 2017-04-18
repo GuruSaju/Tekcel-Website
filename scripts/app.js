@@ -27,6 +27,7 @@ function Content(){
              this.contactvar=false;
              this.aboutvar=false;
              this.careervar=false;
+             this.productvar=false;
         if(menu === "home"){
             this.homevar=true;
         }
@@ -41,6 +42,10 @@ function Content(){
         }
         else if(menu === "career"){
             this.careervar=true;
+        }
+
+     else if(menu === "product"){
+            this.productvar=true;
         }
     };
 this.isActive = function (viewLocation) {
