@@ -12,7 +12,7 @@
   <script src="scripts/contactus.controller.js"></script>
   <script src="scripts/services.controller.js"></script>
   <script src="scripts/careers.controller.js"></script>
-   <script src="scripts/product.controller.js"></script>
+  <script src="scripts/product.controller.js"></script>
   <link rel="stylesheet" href="css/page.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/aboutus.css">
@@ -351,13 +351,50 @@
             <h1 style="color: #ff4d4d"> &nbsp; Careers</h1>
             <h5 style="color: #ff4d4d"> &nbsp; &nbsp;&nbsp;&nbsp; Employees are the source for our service excellence</h5>
           </div>
-          <h3>TeKcel Success </h3>
-          <h3>Built on Effective and Enduring Relationships</h3>
-          <article>
-            <p>{{cac.contentis.carp1}}</p>
-            <p>{{cac.contentis.carp2}}</p>
-            <p>{{cac.contentis.carp3}}</p>
-          </article>
+
+          <div class="row">
+
+            <div class="col-md-8">
+              <h3>TeKcel Success </h3>
+              <h3>Built on Effective and Enduring Relationships</h3>
+              <article>
+                <p>{{cac.contentis.carp1}}</p>
+                <p>{{cac.contentis.carp2}}</p>
+                <p>{{cac.contentis.carp3}}</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+
+              <h3 style="text-align: center">Employee Login</h3>
+              <br>
+              <form ng-submit="cac.validateLogin()">
+
+                <label for="fname">Userame</label>
+                <input type="text" ng-model="cac.username" placeholder="Enter your username" required>
+
+
+                <label for="lname">Password</label>
+                <input type="password" ng-model="cac.password" placeholder="Enter your password" required>
+                <div ng-show="cac.novalidate">
+                  <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span> Username or password is incorrect
+                  </div>
+
+
+
+
+                </div>
+                
+          
+                <input type="submit" value="Login">
+
+              </form>
+
+            </div>
+
+          </div>
+
 
           <h3>Our Benifits Include</h3>
 
@@ -489,15 +526,15 @@
 
                   <label for="fname">Name</label>
                   <input type="text" id="name" name="name" placeholder="Your name">
-                  
+
 
                   <label for="lname">Email</label>
                   <input type="text" id="email" name="email" placeholder="Enter your email">
-                  
+
 
                   <label for="subject">Message</label>
                   <textarea id="message" name="message" placeholder="Enter your Message" style="height:200px"></textarea>
-                  
+
 
                   <input type="submit" value="Send">
 
@@ -527,7 +564,7 @@
 
 
 
-<div ng-show="cc.productvar" ng-controller="productcontrol as pc">
+        <div ng-show="cc.productvar" ng-controller="productcontrol as pc">
 
 
 
@@ -540,13 +577,13 @@
 
 
 
-            <div class="row">
+          <div class="row">
 
-              <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
+            <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
 
-            </div>
+          </div>
 
-</div>
+        </div>
 
 
 

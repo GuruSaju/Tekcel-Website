@@ -69,10 +69,7 @@
 
 
 .topnav a:hover {
-    background-color: indianred;
-    color: black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
+    color: #e60000;
 }
 .topnav a:first-child:hover {
     background-color: black;  
@@ -82,8 +79,10 @@
 }
 
 .topnav a.active {
-    background-color: indianred;
-    color: black;
+     background-color: #333;
+    color: #e60000;
+    text-decoration: underline;
+    -moz-text-decoration-color: #e60000;
 }
 /*
 @media all and (max-width: 600px) {
@@ -130,7 +129,35 @@
 }
 }
 */
-@media screen and (max-width: 600px) {
+
+@media screen and (min-width: 601px) and (max-width: 1300px) {
+.topnav a:first-child {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+   padding: 14px 16px;
+    text-decoration: none;
+   
+    width:100%;
+    
+}
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+   padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    width:16.66%;
+    
+}
+
+}
+
+
+@media screen and (max-width: 750px) {
     .topnav a:first-child{
         width: 80%
     }
@@ -143,7 +170,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
       width: 20%;

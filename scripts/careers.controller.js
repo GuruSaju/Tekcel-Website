@@ -21,4 +21,11 @@ function CareerCtrl() {
 
     this.contentis = this.content[0];
 
+
+    this.validateLogin=function(){
+        this.novalidate=true;
+        this.novalidate=false;
+        this.novalidate=true;
+    }
+
 }
