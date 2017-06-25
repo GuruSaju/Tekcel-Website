@@ -23,11 +23,16 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-   padding: 14px 16px;
+   padding: 5px 10px;
     text-decoration: none;
     font-size: 17px;
-    width:400px;
+    width:220px;
     
+}
+
+img.resize{
+    width: 200px;
+    height: 50px;
 }
 .topnav a {
     float: right;
@@ -150,7 +155,7 @@
    padding: 14px 16px;
     text-decoration: none;
     font-size: 14px;
-    width:16.66%;
+    width:20%;
     
 }
 

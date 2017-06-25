@@ -1,6 +1,7 @@
 <html ng-app="WebModule">
 
 <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
@@ -27,11 +28,11 @@
 <body>
   <div ng-controller="contentcontrol as cc">
     <div class="topnav" id="myTopnav">
-      <a><img src="images/logo_topstrip.png"></a>
+      <a><img class="resize" src="images/tekcellogo1.jpeg"></a>
       <a ng-class="{active: cc.contactvar }" href="#contact" ng-model="cc.contactvar" ng-click="cc.homeclick('contact')">Contact Us</a>
       <a ng-class="{active: cc.careervar }" href="#career" ng-model="cc.careervar" ng-click="cc.homeclick('career')">Careers</a>
-      <a ng-class="{active: cc.servicevar }" href="#service" ng-model="cc.servicevar" ng-click="cc.homeclick('service')">Services</a>
-      <a ng-class="{active: cc.productvar }" href="#products" ng-model="cc.productvar" ng-click="cc.homeclick('product')">Products</a>
+      <a ng-class="{active: cc.servicevar }" href="#service" ng-model="cc.servicevar" ng-click="cc.homeclick('service')">Domain</a>
+     <!-- <a ng-class="{active: cc.productvar }" href="#products" ng-model="cc.productvar" ng-click="cc.homeclick('product')">Staffing</a> -->
       <a ng-class="{active: cc.aboutvar }" href="#about" ng-model="cc.aboutvar" ng-click="cc.homeclick('about')">Consulting</a>
       <a ng-class="{active: cc.homevar }" href="#home" ng-model="cc.homevar" ng-click="cc.homeclick('home')">Home</a>
       <a href="#" class="icon" ng-click="cc.responsive()">&#9776;</a>
@@ -66,25 +67,25 @@
 
               <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
-                <img src="images/img1.jpg" style="width: 100%;height: 350px">
+                <img src="images/slideshow1.png" style="width: 100%;height: 350px">
 
               </div>
 
               <div class="mySlides fade">
                 <div class="numbertext">2 / 4</div>
-                <img src="images/img2.jpg" style="width: 100%;height: 350px">
+                <img src="images/slideshow2.png" style="width: 100%;height: 350px">
 
               </div>
 
               <div class="mySlides fade">
                 <div class="numbertext">3 / 4</div>
-                <img src="images/img3.jpg" style="width: 100%;height: 350px">
+                <img src="images/slideshow3.jpg" style="width: 100%;height: 350px">
 
               </div>
 
               <div class="mySlides fade">
                 <div class="numbertext">4 / 4</div>
-                <img src="images/img4.jpg" style="width: 100%;height: 350px">
+                <img src="images/slideshow4.jpg" style="width: 100%;height: 350px">
 
               </div>
 
@@ -103,7 +104,7 @@
 
               <div class="col-md-8">
                 <article>
-                  <h1>Know About Us</h1>
+                  <h1>About TeKcel</h1>
                   <p>{{hc.contentis.knowaboutusp1}}</p>
                   <p>{{hc.contentis.knowaboutusp2}}</p>
                 </article>
@@ -141,7 +142,7 @@
                 <div class="col-md-4" id="wwdbox2">
                   <br>
                   <p style="text-align: center;"><img src="images/icon_technology_training.png" style="width : 60px;height:60px"></p>
-                  <h4 style="text-align: center;">Technology Training</h4>
+                  <h4 style="text-align: center;">Technology Staffing</h4>
                   <p style="text-align: center;"> {{hc.contentis.box2}}
                     <p>
                 </div>
@@ -149,7 +150,7 @@
                 <div class="col-md-4" id="wwdbox3">
                   <br>
                   <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
-                  <h4 style="text-align: center;">Technology Solutions</h4>
+                  <h4 style="text-align: center;">Technology Domain</h4>
                   <p style="text-align: center;">{{hc.contentis.box3}}
                     <p>
                 </div>
@@ -187,17 +188,17 @@
           <div ng-controller="aboutcontrol as ac">
             <div class="about">
               <br>
-              <h1 style="color: #ff4d4d">&nbsp; About Us</h1>
-              <h5 style="color: #ff4d4d">&nbsp; &nbsp;&nbsp;&nbsp; A Staffing and consulting agency that believes in the power of people.</h5>
+              <h1 style="color: #ff4d4d">&nbsp; Technology Consulting</h1>
+              <h5 style="color: #ff4d4d">&nbsp; &nbsp;&nbsp;&nbsp; Pioneering, Innovative and Cutting Edge with focus on Solutions.</h5>
             </div>
             <div>
-              <h3>TeKcel Success </h3>
-              <h3>Built on Effective and Enduring Relationships</h3>
-              <article>
-                <p>{{ac.contentis.relp1}}</p>
-                <p>{{ac.contentis.relp2}}</p>
-              </article>
+              <h3>Tekcel Consulting and Staffing </h3>
 
+              <article>
+                <p>{{ac.contentis.consultnStaff}}</p>
+                <br>
+              </article>
+              <!--
               <h3>What Makes Us Different?</h3>
 
               <article>
@@ -212,37 +213,9 @@
                 <br>
                 <br>
               </article>
+              -->
             </div>
-          </div>
-
-          <div class="row">
-
-            <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
-
-          </div>
-
-
-        </div>
-
-
-
-
-
-        <div ng-show="cc.servicevar" ng-controller="servicescontrol as sc">
-          <div class="services">
-            <br>
-            <h1 style="color: #ff4d4d"> &nbsp; Services</h1>
-            <h5 style="color: #ff4d4d"> &nbsp; &nbsp;&nbsp;&nbsp; We offer an array of valuable products and services</h5>
-          </div>
-          <article>
-            <h2>Name is incredible</h2>
-            <h4>We tailor service to meet the direct needs of each client</h4>
-            <p>{{sc.contentis.serp1}}</p>
-          </article>
-
-
-
-
+          
           <div class="whatwedo">
 
             <div>
@@ -331,15 +304,50 @@
             <br>
             <br>
             <br>
+
             <div class="row">
 
               <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
 
             </div>
+
           </div>
-
-
         </div>
+        </div>
+
+
+
+
+
+        <div ng-show="cc.servicevar" ng-controller="servicescontrol as sc">
+          <div class="services">
+            <br>
+            <h1 style="color: #ff4d4d"> &nbsp; Technology Domain</h1>
+          <!--  <h5 style="color: #ff4d4d"> &nbsp; &nbsp;&nbsp;&nbsp; We offer an array of valuable products and services</h5> -->
+          </div>
+          <article>
+            <h2>TeKcel Domain</h2>
+            
+            <p>{{sc.contentis.domainhead}}</p>
+            <p>{{sc.contentis.domain1}}</p>
+            <p>{{sc.contentis.domain2}}</p>
+            <p>{{sc.contentis.domain3}}</p>
+            <p>{{sc.contentis.domain4}}</p>
+            <p>{{sc.contentis.domain5}}</p>
+            <p>{{sc.contentis.domain6}}</p>
+            <p>{{sc.contentis.domain7}}</p>
+          </article>
+
+           <div class="row">
+
+              <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
+
+            </div>
+
+          </div>
+        
+        
+
 
 
 
@@ -385,8 +393,8 @@
 
 
                 </div>
-                
-          
+
+
                 <input type="submit" value="Login">
 
               </form>
@@ -405,6 +413,8 @@
             <p>{{cac.contentis.benline4}}</p>
             <p>{{cac.contentis.benline5}}</p>
             <p>{{cac.contentis.benline6}}</p>
+            <p><i>{{cac.contentis.benline6sub1}}</i></p>
+            <p><i>{{cac.contentis.benline6sub2}}</i></p>
             <p>{{cac.contentis.benline7}}</p>
           </article>
           <br>
@@ -516,7 +526,7 @@
 
 
 
-
+              <!--
               <div class="col-md-6 col-xs-12">
                 <br>
 
@@ -541,7 +551,7 @@
                 </form>
               </div>
 
-
+-->
 
             </div>
             <br>
@@ -564,7 +574,7 @@
 
 
 
-        <div ng-show="cc.productvar" ng-controller="productcontrol as pc">
+   <!--     <div ng-show="cc.productvar" ng-controller="productcontrol as pc">
 
 
 
@@ -586,7 +596,7 @@
         </div>
 
 
-
+-->
 
 
 

@@ -10,9 +10,9 @@ function HomeCtrl(){
         "knowaboutusp2": "How do you meet the demands of an increasingly fast-paced global economy? While keeping the costs under control, without compromising on the quality of services? You need a partner you can depend on for faster turnarounds, greater quality, cost efficiency and increased flexibility. Tekcel knows how to address your dynamic technology needs with quick delivery at competitive prices",
         "whatwedoline1": "Being Customer Centric is not our strategy, we are truly customer centric, we do not adapt to it, it is in our DNA.",
         "whatwedoline2": "We are always attentive to gain insight into our customer’s businesses pain points and needs.",
-        "box1": "Pioneering, Innovative and Cutting Edge Technology Consulting Firm corporate headquarters located in Virginia, USA",
-        "box2": "Incredible, Especially and Extremely to Provide you the most Comprehensive and Current Training Curriculum.",
-        "box3": " We offer an Array of Valuable Products and Services, and We Tailor Each Service to Meet The Direct Needs of Each Client.",
+        "box1": "Pioneering, Innovative and Cutting Edge Technology Consulting with focus on Solutions",
+        "box2": "Experienced, skillful and ingenious staff members with extensive industrial knowledge.",
+        "box3": "Banking, Finance, Insurance, Government, Telecommunications, HealthCare,  Auto etc.",
       }
     ];
 
