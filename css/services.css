@@ -51,11 +51,11 @@
 }
 
 #tecbox3:hover{
-    width: 350px;
+    width: 340px;
     height:340px;
-    padding: 10px;
+    padding: 12px;
     border: 4px solid indianred;
-    margin: 15;
+    margin: 30;
 }
 
 #tecbox4 {
