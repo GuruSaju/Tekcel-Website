@@ -8,6 +8,15 @@
     margin:0;
 }
 
+.contactustext{
+    margin:10px;
+}
+
+.contactdesc{
+    margin-left: 15px;
+}
+
+
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
