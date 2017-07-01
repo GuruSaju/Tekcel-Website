@@ -17,7 +17,7 @@ function CareerCtrl() {
             "benline6": "401(k) program**",
             "benline6sub1": "*Insurance eligibility begins on the first day of the first month after hire date",
             "benline6sub2": "**401(k) eligibility begins 90 days after hire date",
-            "benline7": "TeKcel Consulting, Inc. is an equal opportunity employer. Please apply @ us.careers@careers.com"
+            "benline7": "TeKcel Consulting, Inc. is an equal opportunity employer. Please apply by email careers@tekcelinc.com"
         }
     ];
 

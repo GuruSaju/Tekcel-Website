@@ -14,7 +14,7 @@
     margin:0;
 }
 .topnav {
-    background-color: #333;
+    background-color: #424949  ;
     overflow: hidden;
 }
 
@@ -84,7 +84,7 @@ img.resize{
 }
 
 .topnav a.active {
-     background-color: #333;
+     background-color: #424949;
     color: #e60000;
     text-decoration: underline;
     -moz-text-decoration-color: #e60000;
