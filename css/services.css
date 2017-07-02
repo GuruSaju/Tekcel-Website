@@ -12,6 +12,12 @@
     margin:10px;
 }
 
+.servicesdesc{
+    position: center;
+    text-align: left;
+    margin-left: 15px;
+}
+
 #tecbox1 {
     width: 305px;
     height:320px;

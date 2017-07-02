@@ -16,7 +16,7 @@ function ServiceCtrl(){
         "domain4": "Government",
         "domain5": "Telecommunications",
         "domain6": "HealthCare",
-        "domain7": "Auto etc.",
+        "domain7": "Auto",
       }
     ];
 
