@@ -17,9 +17,9 @@ body {font-family: Verdana,sans-serif;}
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 50px;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 .text2 {
@@ -28,9 +28,9 @@ body {font-family: Verdana,sans-serif;}
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 60px;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 .text3 {
@@ -39,9 +39,9 @@ body {font-family: Verdana,sans-serif;}
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 60px;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 .text4 {
@@ -50,7 +50,7 @@ body {font-family: Verdana,sans-serif;}
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 80px;
   width: 100%;
   text-align: right;
 }
@@ -63,9 +63,9 @@ body {font-family: Verdana,sans-serif;}
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 50px;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 .text2 {
@@ -74,9 +74,9 @@ body {font-family: Verdana,sans-serif;}
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 60px;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 .text3 {
@@ -85,9 +85,9 @@ body {font-family: Verdana,sans-serif;}
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 60px;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 .text4 {
@@ -96,7 +96,7 @@ body {font-family: Verdana,sans-serif;}
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
-  bottom: 150px;
+  bottom: 80px;
   width: 100%;
   text-align: right;
 }
