@@ -59,18 +59,19 @@ img.aboutimage{
     width: 100%;
 }
 
-@media all and (min-width: 1000px)and (max-width: 1200px) {
+@media all and (min-width: 1000px)and (max-width: 1500px) {
 
 #wwdbox1 {
-    width: 28%;
+    width: 27%;
     height:240px;
     padding: 10px;
     border: 2px solid indianred;
     margin: 25; 
+    margin-left: 4%;
 }
 
 #wwdbox1:hover{
-    width: 28%;
+    width: 27%;
     height:240px;
     padding: 10px;
     border: 4px solid indianred;
@@ -78,7 +79,7 @@ img.aboutimage{
 }
 
 #wwdbox2 {
-    width: 28%;
+    width: 27%;
     height:240px;
     padding: 10px;
     border: 2px solid indianred;
@@ -86,14 +87,14 @@ img.aboutimage{
 }
 
 #wwdbox2:hover{
-    width: 28%;
+    width: 27%;
     height:240px;
     padding: 10px;
     border: 4px solid indianred;
     margin: 25;
 }
 #wwdbox3 {
-    width: 28%;
+    width: 27%;
     height:240px;
     padding: 10px;
     border: 2px solid indianred;
@@ -101,7 +102,7 @@ img.aboutimage{
 }
 
 #wwdbox3:hover{
-    width: 28%;
+    width: 27%;
     height:240px;
     padding: 10px;
     border: 4px solid indianred;

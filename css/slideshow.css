@@ -12,8 +12,8 @@ body {font-family: Verdana,sans-serif;}
 
 /* Caption text */
 .text1 {
-  color:#e60000;
-  font-size: 50px;
+  color:lightgrey;
+  font-size: 40px;
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
@@ -23,8 +23,8 @@ body {font-family: Verdana,sans-serif;}
 }
 
 .text2 {
-  color:#e60000;
-  font-size: 50px;
+  color:skyblue;
+  font-size: 40px;
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
@@ -34,8 +34,8 @@ body {font-family: Verdana,sans-serif;}
 }
 
 .text3 {
-  color:skyblue;
-  font-size: 50px;
+  color:orangered;
+  font-size: 40px;
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
@@ -46,7 +46,7 @@ body {font-family: Verdana,sans-serif;}
 
 .text4 {
   color:orange;
-  font-size: 50px;
+  font-size: 40px;
   font-family:Palatino Linotype;
   padding: 8px 12px;
   position: absolute;
@@ -58,7 +58,7 @@ body {font-family: Verdana,sans-serif;}
 @media all and (max-width:650px){
   /* Caption text */
 .text1 {
-  color:#e60000;
+  color:lightgrey;
   font-size: 30px;
   font-family:Palatino Linotype;
   padding: 8px 12px;
@@ -69,7 +69,7 @@ body {font-family: Verdana,sans-serif;}
 }
 
 .text2 {
-  color:#e60000;
+  color:skyblue;
   font-size: 30px;
   font-family:Palatino Linotype;
   padding: 8px 12px;
@@ -80,7 +80,7 @@ body {font-family: Verdana,sans-serif;}
 }
 
 .text3 {
-  color:skyblue;
+  color:orangered;
   font-size: 30px;
   font-family:Palatino Linotype;
   padding: 8px 12px;
