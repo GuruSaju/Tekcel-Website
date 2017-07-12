@@ -1,0 +1,794 @@
+<html ng-app="WebModule">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/home.controller.js"></script>
+  <script src="scripts/about.controller.js"></script>
+  <script src="scripts/contactus.controller.js"></script>
+  <script src="scripts/services.controller.js"></script>
+  <script src="scripts/careers.controller.js"></script>
+  <link rel="stylesheet" href="css/page.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/aboutus.css">
+  <link rel="stylesheet" href="css/contactus.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/careers.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  <div ng-controller="contentcontrol as cc">
+    <div class="topnav" id="myTopnav">
+      <a ng-class="{active: cc.homevar }" href="#home" ng-model="cc.homevar" ng-click="cc.homeclick('home')"><img class="resize" src="images/Tekcel-logo20.1.png"></a>
+      <a ng-class="{active: cc.contactvar }" href="#contact" ng-model="cc.contactvar" ng-click="cc.homeclick('contact')">Contact Us</a>
+      <a ng-class="{active: cc.careervar }" href="#career" ng-model="cc.careervar" ng-click="cc.homeclick('career')">Careers</a>
+      <a ng-class="{active: cc.servicevar }" href="#domain" ng-model="cc.servicevar" ng-click="cc.homeclick('service')">Domain</a>
+      <!-- <a ng-class="{active: cc.productvar }" href="#products" ng-model="cc.productvar" ng-click="cc.homeclick('product')">Staffing</a> -->
+      <a ng-class="{active: cc.aboutvar }" href="#consulting" ng-model="cc.aboutvar" ng-click="cc.homeclick('about')">Consulting</a>
+      <a ng-class="{active: cc.homevar }" href="#home" ng-model="cc.homevar" ng-click="cc.homeclick('home')">Home</a>
+      <a href="#" class="icon" ng-click="cc.responsive()">&#9776;</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="entirepage">
+
+
+      <div class="container">
+
+
+
+        <div ng-show="cc.homevar">
+          <!--
+       -->
+          <div ng-controller="homecontrol as hc">
+
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/slideshow2.png" style="width: 100%;height: 280px">
+                <div class="text1">Consulting and Staffing</div>
+
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/slideshow1.png" style="width: 100%;height: 280px">
+               <div class="text2">Technology</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/slideshow3.jpg" style="width: 100%;height: 280px">
+              <div class="text3">Security</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/slideshow4.jpg" style="width: 100%;height: 280px">
+              <div class="text4">Identity and Access</div>
+              </div>
+
+              <br>
+
+              <div style="text-align:center">
+                <span class="dot" ng-click="cc.showclick(1)"></span>
+                <span class="dot" ng-click="cc.showclick(2)"></span>
+                <span class="dot" ng-click="cc.showclick(3)"></span>
+                <span class="dot" ng-click="cc.showclick(4)"></span>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-8">
+                <article>
+                  <h1>TeKcel</h1>
+                  <p style="font-size: 14px">{{hc.contentis.knowaboutusp1}}</p>
+                  <p style="font-size: 14px">{{hc.contentis.knowaboutusp2}}</p>
+                </article>
+              </div>
+
+              <div class="col-md-4">
+                <br>
+                
+                <img class="aboutimage" src="images/aboutus_image.png" >
+              
+              </div>
+            </div>
+
+            <br>
+            <div class="whatwedo">
+
+              <div>
+                <br>
+                <h1 style="text-align: center;">What We Do</h1>
+                <p style="text-align: center;">{{hc.contentis.whatwedoline1}}
+                  <br>{{hc.contentis.whatwedoline2}}</p>
+              </div>
+
+              <br>
+
+              <div class="row">
+
+                <div class="col-md-4" id="wwdbox1">
+                  <br>
+                  <p style="text-align: center;"><img src="images/icon_technology_consulting.png" style="width : 60px;height:60px"></p>
+                  <h4 style="text-align: center;">Technology Consulting</h4>
+                  <p style="text-align: center;"> {{hc.contentis.box1}}
+                    <p>
+                </div>
+
+                <div class="col-md-4" id="wwdbox2">
+                  <br>
+                  <p style="text-align: center;"><img src="images/icon_technology_training.png" style="width : 60px;height:60px"></p>
+                  <h4 style="text-align: center;">Technology Staffing</h4>
+                  <p style="text-align: center;"> {{hc.contentis.box2}}
+                    <p>
+                </div>
+
+                <div class="col-md-4" id="wwdbox3">
+                  <br>
+                  <p style="text-align: center;"><img src="images/icon_turnkey_solutions.png" style="width : 60px;height:60px"></p>
+                  <h4 style="text-align: center;">Technology Domain</h4>
+                  <p style="text-align: center;">{{hc.contentis.box3}}
+                    <p>
+                </div>
+
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <div class="row">
+
+                <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
+
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+        <!-- </div> -->
+
+
+        <div ng-show="cc.aboutvar">
+          <div ng-controller="aboutcontrol as ac">
+            <div class="about">
+              <br>
+              <div class ="abouttext">
+              <h1 style="color: #ff4d4d">Consulting and Staffing</h1>
+              <h5 style="color: #ff4d4d">Pioneering, Innovative and Cutting Edge with focus on Solutions.</h5>
+              </div>
+            </div>
+            <div>
+              <h3>Tekcel Consulting and Staffing </h3>
+
+              <article>
+                <p style="font-size: 14px">{{ac.contentis.consultnStaff}}</p>
+                <br>
+              </article>
+              <!--
+              <h3>What Makes Us Different?</h3>
+
+              <article>
+                <p>{{ac.contentis.diffline1}}</p>
+                <p>{{ac.contentis.diffline2}}</p>
+                <p>{{ac.contentis.diffline3}}</p>
+                <p>{{ac.contentis.diffline4}}</p>
+                <p>{{ac.contentis.diffline5}}</p>
+                <p>{{ac.contentis.diffline6}}</p>
+                <p>{{ac.contentis.diffline7}}</p>
+                <br>
+                <br>
+                <br>
+              </article>
+              -->
+            </div>
+
+            <div class="whatwedo">
+
+              <div>
+                <br>
+                <h1 style="text-align: center;">Technologies</h1>
+                <h4 style="text-align: center">{{ac.contentis.techline}}</h4>
+
+              </div>
+
+              <br>
+
+              <div class="row">
+
+                <div class="col-md-4 col-sm-6 col-xs-12" id="tecbox1">
+                  <br>
+                  <p style="text-align: center;"><span class="glyphicon glyphicon-briefcase" aria-hidden="true" style="font-size : 45px;color:orangered"></p>
+                  <h4 style="text-align: center;">Business Intelligence Tools</h4>
+                  <p style="text-align: center;">We specialize in various BI tools including:
+                    <p>
+                      <p style="text-align: center;">Business Objects
+                        <p>
+                          <p style="text-align: center;">Cognos
+                            <p>
+                              <p style="text-align: center;">MicroStrategy
+                                <p>
+                                  <p style="text-align: center;">Tableau
+                                    <p>
+                                      <p style="text-align: center;">SAS / R
+                                        <p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12" id="tecbox2">
+                  <br>
+                  <p style="text-align: center;"><span class="glyphicon glyphicon-th" aria-hidden="true" style="font-size : 45px;color:orangered"></p>
+                  <h4 style="text-align: center;">Big Data Technologies</h4>
+                  <p style="text-align: center;">We are an IBM BigInsights partner and have experience in:
+                    <p>
+                      <p style="text-align: center;">Hadoop
+                        <p>
+                          <p style="text-align: center;">Cloudera
+                            <p>
+                              <p style="text-align: center;">Map-R
+                                <p>
+                                  <p style="text-align: center;">Hive
+                                    <p>
+                                      <p style="text-align: center;">Spark
+                                        <p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12" id="tecbox3">
+                  <br>
+                  <p style="text-align: center;"><span class="glyphicon glyphicon-list-alt" aria-hidden="true" style="font-size : 45px;color:orangered"></p>
+                  <h4 style="text-align: center;">Database Technologies</h4>
+                 <p style="text-align: center;">Well versed in various DBMS technologies including:
+                    <p>
+                      <p style="text-align: center;">TeraData
+                        <p>
+                          <p style="text-align: center;">Oracle
+                            <p>
+                              <p style="text-align: center;">DB2
+                                <p>
+                                  <p style="text-align: center;">Netezza
+                                    <p>
+                                      <p style="text-align: center;">SQL Server
+                                        <p>
+                </div>
+
+
+                
+<!--
+              </div>
+              <div class="row">
+                -->
+             <div class="col-md-4 col-sm-6 col-xs-12" id="tecbox4">
+                  <br>
+                  <p style="text-align: center;"><span class="glyphicon glyphicon-random" aria-hidden="true" style="font-size : 45px;color:orangered"></p>
+                  <h4 style="text-align: center;">Data Integration tools</h4>
+                  <p style="text-align: center;">Integrate Data leveraging industry leading processes and tools, including:
+                    <p>
+                      <p style="text-align: center;">Informatica
+                        <p>
+                          <p style="text-align: center;">DataStage
+                            <p>
+                              <p style="text-align: center;">Ablnitio
+                                <p>
+                                 
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12" id="tecbox5">
+                  <br>
+                  <p style="text-align: center;"><span class="glyphicon glyphicon-globe" aria-hidden="true" style="font-size : 45px;color:orangered"></p>
+                  <h4 style="text-align: center;">Web Applications</h4>
+                  <p style="text-align: center;">We have significant experience in web based applications including:
+                    <p>
+                      <p style="text-align: center;">Java / J2EE
+                        <p>
+                          <p style="text-align: center;">Web Services
+                            <p>
+                              <p style="text-align: center;"> Front End
+                                <p>
+                                  <p style="text-align: center;">SEO
+                                    <p>
+                                      <p style="text-align: center;">Web Security
+                                    <p>
+                </div>
+              <div class="col-md-4 col-sm-6 col-xs-12" id="tecbox6">
+                  <br>
+                  <p style="text-align: center;"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true" style="font-size : 45px;color:orangered"></span></p>
+                  <h4 style="text-align: center;">Cloud</h4>
+                  <p style="text-align: center;">We help you make the transition based on your needs
+                    <p>
+                      <p style="text-align: center;">AWS
+                        <p>
+                          <p style="text-align: center;">Salesforce
+                            <p>
+                              <p style="text-align: center;">Micro Services
+                                <p>
+                                  
+                </div>
+
+               
+
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <div class="row">
+
+                <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div ng-show="cc.servicevar" ng-controller="servicescontrol as sc">
+          <div class="services">
+            <br>
+            <div class="servicestext">
+            <h1 style="color: #ff4d4d">Technology Domain</h1>
+            <!--  <h5 style="color: #ff4d4d"> &nbsp; &nbsp;&nbsp;&nbsp; We offer an array of valuable products and services</h5> -->
+            </div>
+          </div>
+          <article>
+            <br>
+            <br>
+            <p style="font-size: 14px">{{sc.contentis.domainfirstp}}</p>
+
+            <p style="font-size: 14px">{{sc.contentis.domainhead}}</p>
+
+            <div class="row">
+
+              <div class="col-md-12 col-xs-12">
+                <br>
+                
+                <div class="row">
+          
+                  <div class="col-md-1 col-xs-1">
+                    <span class="glyphicon glyphicon-piggy-bank" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                    <div class="servicesdesc">
+                     <p style="font-size: 14px">{{sc.contentis.domain1}}</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <br>
+                <div class="row">
+                  
+                  <div class="col-md-1 col-xs-1">
+                    <span class="glyphicon glyphicon-usd" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="servicesdesc">
+                    <p style="font-size: 14px">{{sc.contentis.domain2}}</p>
+                     </div>
+                  </div>
+                </div>
+
+
+
+                <br>
+                <div class="row">
+                 
+                  <div class="col-md-1 col-xs-1">
+                    <span class="glyphicon glyphicon-book" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="servicesdesc">
+        <p style="font-size: 14px">{{sc.contentis.domain3}}</p>
+                     </div>
+                  </div>
+                </div>
+
+
+
+                <br>
+                <div class="row">
+                 
+                  <div class="col-md-1 col-xs-1">
+                    <span class="glyphicon glyphicon-tower" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="servicesdesc">
+                   <p style="font-size: 14px">{{sc.contentis.domain4}}</p>
+                     </div>
+                  </div>
+                </div>
+<br>
+                 <div class="row">
+                  
+                  <div class="col-md-1 col-xs-1">
+                    <span class="glyphicon glyphicon-phone-alt" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="servicesdesc">
+                    <p style="font-size: 14px">{{sc.contentis.domain5}}</p>
+                     </div>
+                  </div>
+                </div>
+<br>
+                <div class="row">
+                 
+                  <div class="col-md-1 col-xs-1">
+                    <span class="glyphicon glyphicon-plus" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="servicesdesc">
+                    <p style="font-size: 14px">{{sc.contentis.domain6}}</p>
+                     </div>
+                  </div>
+                </div>
+<br>
+                <div class="row">
+                  
+                  <div class="col-md-1 col-xs-1">
+                    <span class="glyphicon glyphicon-plane" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="servicesdesc">
+                    <p style="font-size: 14px">{{sc.contentis.domain7}}</p>
+                     </div>
+                  </div>
+                </div>
+
+              </div>
+            
+          </article>
+
+          <div class="row">
+
+            <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div ng-show="cc.careervar" ng-controller="careerscontrol as cac">
+          <div class="careers">
+            <br>
+            <div class="careerstext">
+            <h1 style="color: #ff4d4d">Careers</h1>
+            <h5 style="color: #ff4d4d">Employees are the source for our service excellence</h5>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-8">
+              <h3>Built on Effective and Enduring Relationships</h3>
+              <article>
+                <p style="font-size: 14px">{{cac.contentis.carp1}}</p>
+                <p style="font-size: 14px">{{cac.contentis.carp2}}</p>
+                <p style="font-size: 14px">{{cac.contentis.carp3}}</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+
+              <h3 style="text-align: center">Employee Login</h3>
+              <br>
+              <form ng-submit="cac.validateLogin()">
+
+                <label for="fname">Userame</label>
+                <input type="text" ng-model="cac.username" placeholder="Enter your username" required>
+
+
+                <label for="lname">Password</label>
+                <input type="password" ng-model="cac.password" placeholder="Enter your password" required>
+                <div ng-show="cac.novalidate">
+                  <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span> Username or password is incorrect
+                  </div>
+
+
+
+
+                </div>
+
+
+                <input type="submit" value="Login">
+
+              </form>
+
+            </div>
+
+          </div>
+
+
+          <h3>Our Benifits Include</h3>
+
+          <article>
+            <p style="font-size: 14px">{{cac.contentis.benline1}}</p>
+            <p style="font-size: 14px">{{cac.contentis.benline2}}</p>
+            <p style="font-size: 14px">{{cac.contentis.benline3}}</p>
+            <p style="font-size: 14px">{{cac.contentis.benline4}}</p>
+            <p style="font-size: 14px">{{cac.contentis.benline5}}</p>
+            <p style="font-size: 14px">{{cac.contentis.benline6}}</p>
+            <p style="font-size: 14px"><i>{{cac.contentis.benline6sub1}}</i></p>
+            <p style="font-size: 14px"><i>{{cac.contentis.benline6sub2}}</i></p>
+            <p style="font-size: 14px">{{cac.contentis.benline7}}</p>
+          </article>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+
+            <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
+
+          </div>
+        </div>
+
+
+        <div ng-show="cc.contactvar">
+          <div ng-controller="contactcontrol as coc">
+            <div class="contactus">
+              <br>
+              <div class="contactustext">
+              <h1 style="color: #ff4d4d">Contact Us</h1>
+              <h5 style="color: #ff4d4d"> Give us a Call</h5>
+              </div>
+            </div>
+
+
+
+
+            <div class="row">
+
+<div class="col-md-6 col-xs-12">
+<br>
+<br>
+<br>
+<article>
+  <p style="font-size: 14px">{{coc.contentis.relp1}}</p>
+    <p style="font-size: 14px">{{coc.contentis.relp1}}</p>
+                <p style="font-size: 14px">{{coc.contentis.diffline1}}</p>
+                <p style="font-size: 14px">{{coc.contentis.diffline2}}</p>
+                <p style="font-size: 14px">{{coc.contentis.diffline3}}</p>
+                <p style="font-size: 14px">{{coc.contentis.diffline4}}</p>
+                <p style="font-size: 14px">{{coc.contentis.diffline5}}</p>
+                <p style="font-size: 14px">{{coc.contentis.diffline6}}</p>
+                <p style="font-size: 14px">{{coc.contentis.diffline7}}</p>
+                <br>
+                <br>
+                <br>
+              </article>
+
+</div>
+              <div class="col-md-6 col-xs-12">
+                <br>
+                <h3 style="text-align: center"> Our Office </h3>
+
+
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-md-2 col-xs-1">
+
+                  </div>
+                  <div class="col-md-1.5 col-xs-2">
+                    <span class="glyphicon glyphicon-time" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                    <div class="contactdesc">
+                    <p style="font-size: 17px"> Opening Hours</p>
+                    <p style="font-size: 17px"> 9:00 AM - 6:00 PM</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <br>
+                <div class="row">
+                  <div class="col-md-2 col-xs-1">
+
+                  </div>
+                  <div class="col-md-1.5 col-xs-2">
+                    <span class="glyphicon glyphicon-envelope" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="contactdesc">
+                    <p style="font-size: 17px"> Email</p>
+                    <p style="font-size: 17px"> info@tekcelinc.com</p>
+                     </div>
+                  </div>
+                </div>
+
+
+
+                <br>
+                <div class="row">
+                  <div class="col-md-2 col-xs-1">
+
+                  </div>
+                  <div class="col-md-1.5 col-xs-2">
+                    <span class="glyphicon glyphicon-earphone" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="contactdesc">
+                    <p style="font-size: 17px"> Phone</p>
+                    <p style="font-size: 17px"> 703-880-7789</p>
+                     </div>
+                  </div>
+                </div>
+
+
+
+                <br>
+                <div class="row">
+                  <div class="col-md-2 col-xs-1">
+
+                  </div>
+                  <div class="col-md-1.5 col-xs-2">
+                    <span class="glyphicon glyphicon-globe" style="font-size: 45px;color: orangered"></span>
+                  </div>
+
+                  <div class="col-md-8 col-xs-9">
+                     <div class="contactdesc">
+                    <p style="font-size: 17px"> Location</p>
+                    <p style="font-size: 17px"> 21271 Hyrst Grove Terrace, Ashburn, VA 20147, USA</p>
+                     </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+              </div>
+
+
+
+
+
+
+              <!--
+              <div class="col-md-6 col-xs-12">
+                <br>
+
+                <h3 style="text-align: center">Contact Form here</h3>
+                <h5 style="text-align: center">Feel free to contact us with any questions regarding our products, services, training, or employment opportunities.</h5>
+                <form action="webmailer.php" method="post">
+
+                  <label for="fname">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name">
+
+
+                  <label for="lname">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Enter your email">
+
+
+                  <label for="subject">Message</label>
+                  <textarea id="message" name="message" placeholder="Enter your Message" style="height:200px"></textarea>
+
+
+                  <input type="submit" value="Send">
+
+                </form>
+              </div>
+
+-->
+
+            </div>
+            <br>
+            <br>
+            <br>
+          </div>
+
+
+
+
+          <div class="row">
+
+            <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
+
+          </div>
+        </div>
+
+
+
+
+
+
+        <!--     <div ng-show="cc.productvar" ng-controller="productcontrol as pc">
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="row">
+
+            <footer class="footer">Copyright &copy; TeKcel Inc. All rights reserved.</footer>
+
+          </div>
+
+        </div>
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+      <!-- entire page div -->
+    </div>
+
+    <!-- page controller div -->
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.careers{
+    background-image: url("../images/slideshow2.png");
+    background-size:cover;
+    background-repeat: repeat-x;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    margin:0;
+}
+
+.careerstext{
+    margin:10px;
+}
